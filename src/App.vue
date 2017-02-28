@@ -1,30 +1,25 @@
 <template>
     <div id="app">
-        <ui-tabbar v-model="selected">
-            <ui-tab-item id="首页">
-                <router-link to="/index">
-                    首页
-                </router-link>
+        <ui-tabbar v-model="select">
+            <ui-tab-item id="home" isRouter>
+            <i slot="icon-normal" class="iconfont icon-shouye" ></i>
+                    <span>首页</span>
             </ui-tab-item>
-            <ui-tab-item id="分类">
-                <router-link to="/category">
-                    分类
-                </router-link>
+            <ui-tab-item id="category" isRouter> 
+                 <i slot="icon-normal" class="iconfont icon-sort" ></i>
+                    <span>分类</span>
             </ui-tab-item>
-            <ui-tab-item id="全球尖货">
-                <router-link to="/global">
-                    全球尖货
-                </router-link>
+            <ui-tab-item id="global" isRouter>
+               <i slot="icon-normal" class="iconfont icon-iosworldoutline" ></i>
+                    <span>全球尖货</span>
             </ui-tab-item>
-            <ui-tab-item id="购物车">
-                <router-link to="/cart">
-                    购物车
-                </router-link>
+            <ui-tab-item id="cart" isRouter>
+              <i slot="icon-normal" class="iconfont icon-gouwuche" ></i>
+                    <span>购物车</span>
             </ui-tab-item>
-            <ui-tab-item id="我的">
-                <router-link to="/my">
-                    我的
-                </router-link>
+            <ui-tab-item id="my" isRouter>
+             <i slot="icon-normal" class="iconfont icon-wodejuhuasuan"></i>
+                    <span>我的</span>
             </ui-tab-item>
         </ui-tabbar>
         <router-view></router-view>
@@ -39,13 +34,10 @@ import uiTabItem from './uicomponents/tabbar/tabbar-item';
 
         data() {
             return {
-                selected: '首页'
+                select: 'home'
             };
         },
         computed: {
-            filterResult() {
-                return this.defaultResult.filter(value => new RegExp(this.value, 'i').test(value))
-            }
         },
         components: {
             uiTabbar,
@@ -65,6 +57,6 @@ import uiTabItem from './uicomponents/tabbar/tabbar-item';
         /*margin-top: 60px;*/
     }
     .acitve{
-        color: blueviolet;
+        color: #ff6900;
     }
 </style>

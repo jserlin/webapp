@@ -13,7 +13,7 @@ export default new Router({
   linkActiveClass:'is-active',
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'Index',
       component: Index
     },

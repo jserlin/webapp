@@ -5,7 +5,8 @@ import App from './App';
 import router from './router';
 // import Mint from 'mint-ui';
 // import 'mint-ui/lib/style.css';
-import '../static/reset.css';
+import './libs/css/reset.css';
+import './libs/css/font/iconfont.css';
 
 // 全局引用mint-ui
 // Vue.use(Mint);

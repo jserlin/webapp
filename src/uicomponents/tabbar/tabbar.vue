@@ -5,7 +5,10 @@
 </template>
 
 <script>
-  export default {}    
+  export default {
+    //该传值很关键
+    props: ['value']
+  }    
 </script>
 
 <style lang="stylus">
