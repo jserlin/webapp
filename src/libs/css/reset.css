@@ -31,6 +31,8 @@ footer, header, menu, nav, section {
 
 body {
     line-height: 1;
+    font-family: 'pingFang Sc','STHeitSC-Light','Helvetica-Light',arial,sans-serif;
+    background: #f0f0f0;
 }
 
 blockquote, q {
