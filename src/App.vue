@@ -5,7 +5,7 @@
             <i slot="icon-normal" class="iconfont icon-shouye" ></i>
                     <span>首页</span>
             </ui-tab-item>
-            <ui-tab-item id="category" isRouter> 
+            <ui-tab-item id="category" isRouter>
                  <i slot="icon-normal" class="iconfont icon-sort" ></i>
                     <span>分类</span>
             </ui-tab-item>

@@ -48,7 +48,9 @@
 </script>
 
 <style lang="stylus">
-.ui-tabbar-item {
+    @import "../../libs/css/stylus/variable.styl";
+
+    .ui-tabbar-item {
     flex: 1;
     text-align: center;
     .ui-tabbar-item-icon {

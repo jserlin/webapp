@@ -1,6 +1,6 @@
 <template>
     <div class="my">
-        <ui-header title="个人中心" bg="true">
+        <ui-header title="个人中心" :bg="true" :fixed="true">
 
         </ui-header>
     </div>

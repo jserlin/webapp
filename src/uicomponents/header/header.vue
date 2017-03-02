@@ -18,11 +18,11 @@
                 default:''
             },
             bg:{
-                type:Boolean,
+                type: Boolean,
                 default: false
             },
             fixed:{
-                type:Boolean,
+                type: Boolean,
                 default: false
             }
         }
