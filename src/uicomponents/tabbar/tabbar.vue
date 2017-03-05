@@ -18,7 +18,7 @@
           return this.$route.matched[0].path.slice(1);
         }
        // this.value = this.$route.matched[0].name;
-    },
+    }
   }    
 
 </script>
